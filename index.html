@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rounding a number</title>
+    <script src="index.js"></script>
+    <style>
+        *{
+            font-family: monospace;
+            font-size: 20px;
+        }
+        h1{
+            font-size: 25px;
+        }
+        #box{
+            display: flex;
+            height:80px;
+            justify-content: center;
+            align-items: center;
+            padding:5px;
+            background-color: brown;
+            color: white;
+        }
+
+        #btn{
+            width: 200px;
+            border: 4px solid brown;
+            padding:5px;
+            display:flex;
+            justify-content: center;
+        }
+
+        #btn:hover{
+            cursor:pointer;
+            color:#fff;
+            background-color: brown;
+            box-shadow: 2px 2px 5px brown;
+        }
+
+        #num{
+            padding:5px;
+            width: 350px;
+            display:flex;
+            border: 4px solid brown;
+        }
+
+        #num:focus{
+            color:brown;
+            box-shadow: 2px 2px 5px brown; 
+        }
+        .ans{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        
+            <div id="box"><h1>Rounding a Number in various ways</h1></div>
+            <br> 
+            
+            <table cellpadding="2px">
+                <tr>
+                    <td><input id = "num" type="number" placeholder="Enter a floating number"></td>
+                    <td></td>
+                    <td><button type="button" onclick="roundToInteger(num.value),roundToTength(num.value),roundToHundredths(num.value),roundToThousand(num.value)" id="btn">Round Off</button></td>
+                </tr>
+                <tr><br></tr>
+                <tr>
+                    <td><p>Rounding a number to integer</p></td>
+                    <td><p>: </p></td>
+                    <td class="ans"><p id = "integer">0</p></td>
+                </tr>
+                <tr>
+                    <td><p>Rounding a number to tenths position</p></td>
+                    <td><p>: </p></td>
+                    <td class="ans"><p id = "tenth" >0</p></td>
+                </tr>
+                <tr>
+                    <td><p>Round a number to hundredth position</p></td>
+                    <td><p>: </p></td>
+                    <td class="ans"><p id = "hundred" >0</p></td>
+                </tr>
+                <tr>
+                    <td><p>Round a number to thousand position</p></td>
+                    <td><p>: </p></td>
+                    <td class="ans"><p id = "thousand" >0</p></td>
+                </tr>
+            </table>      
+    </center>
+    
+</body>
+</html>
